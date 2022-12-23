@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+.text-header {
+  @apply text-amber-400
+}
+
+.color-primary {
+  @apply text-amber-400
+}
+
+.border-primary {
+  @apply border-solid border-amber-400
+}
+
+.divide-primary {
+  @apply divide-amber-400
+}
+
+.btn-primary {
+  @apply bg-gradient-to-tr from-amber-600 to-amber-400 p-4 text-white 
+}
+
+.bg-primary {
+  @apply bg-slate-900
+}ç
+
+.screen-width{
+  @apply w-11/12 lg:w-10/12 xl:w-8/12;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-700;
+}
+
+.vp-center {
+  @apply pt-0;
+}
+
+// .hamburger {
+//   cursor: pointer;
+//   width: 24px;
+//   height: 24px;
+//   transition: all 0.25s;
+//   position: relative;
+// }
+
+// .hamburger-top,
+// .hamburger-middle,
+// .hamburger-bottom {
+//   content: '';
+//   position: absolute;
+//   width: 24px;
+//   height: 3px;
+//   top:0;
+//   left: 0;
+//   background: #000;
+//   transform: rotate(0);
+//   transition: all 0.5s;
+// }
+
+// .hamburger-middle {
+//   transform: translateY(7px);
+// }
+
+// .hamburger-bottom {
+//   transform: translateY(14px);
+//   background: #000;
+// }
+
+// .open {
+//   transform: rotate(90deg);
+//   transform: translateY(0px);
+//   position: fixed;
+//   top: 50px;
+//   right: 25px;
+// }
+
+// .open .hamburger-top {
+//   transform: rotate(45deg) translateY(6px) translateX(6px);
+//   background-color: #fff;
+// }
+
+// .open .hamburger-middle {
+//   display: none;
+// }
+
+// .open .hamburger-bottom {
+//   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+//   background-color: #fff;
+// }
