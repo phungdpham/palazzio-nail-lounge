@@ -6,8 +6,8 @@ import db from "../../constant/db";
 function AppointmentBtn() {
   return (
     <div className="fixed right-0  md:top-[35%]">
-      <button className="btn-primary rounded-l-lg flex items-center gap-2 ">
-        <span className="text-lg">
+      <button className="btn-primary rounded-l-lg flex items-center gap-3 ">
+        <span className="text-xl">
           <FaRegCalendarPlus />
         </span>
         <a
@@ -15,7 +15,7 @@ function AppointmentBtn() {
           className="items-center text-center text-xl"
           target="_blank"
         >
-          Book Appointment
+          Book Online
         </a>
       </button>
     </div>
