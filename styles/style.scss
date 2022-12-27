@@ -16,12 +16,22 @@
   @apply border-solid border-amber-400
 }
 
+.text-hover {
+  @apply hover:text-amber-400 hover:font-bold hover:border-b-amber-400
+}
+
 .divide-primary {
   @apply divide-amber-400
 }
 
+.bg-hover{
+  @apply hover:bg-gradient-to-r hover:from-amber-600 hover:to-amber-400
+}
+
 .btn-primary {
-  @apply bg-gradient-to-tr from-amber-600 to-amber-400 p-4 text-white 
+  // @apply bg-gradient-to-tr from-amber-600 to-amber-400 p-4 text-white 
+  @apply bg-gradient-to-tr from-amber-600 to-amber-400 p-2 text-white 
+
 }
 
 .bg-primary {

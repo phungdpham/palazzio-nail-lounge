@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Footer from '../footer';
 import Header from '../header';
 import { motion } from 'framer-motion';
-import CallButton from '../common/callBtn';
+import MobileButtons from '../common/mobileBtn';
 import AppointmentBtn from '../common/appointmentBtn';
 
 function Layout({ children, homePage }) {
@@ -22,7 +22,7 @@ function Layout({ children, homePage }) {
         <div className="min-h-screen  bg-gradient-to-r from-zinc-900 to-zinc-800">{children}</div>
       </motion.div>
       <AppointmentBtn />
-      <CallButton />
+      <MobileButtons />
       <Footer />
     </>
   );
