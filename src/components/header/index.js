@@ -3,9 +3,9 @@ import { useState } from 'react';
 import Pages from '../../constant/link';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
-import Logo from "../../images/palazzioLogo.png";
+import Logo from '../../images/palazzioLogo.png';
 import Image from 'next/image';
-import salonDb from "../../constant/db";
+import salonDb from '../../constant/db';
 
 function Header({ homePage }) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -22,9 +22,9 @@ function Header({ homePage }) {
         }`}
       >
         <div className="flex justify-between items-center mx-auto py-5 screen-width z-10 text-white ">
-          <div className='flex justify-start items-center gap-2'>
-            <div className='h-20 w-20'>
-            <Image src={Logo} className="h-5"></Image>
+          <div className="flex justify-start items-center gap-2">
+            <div className="h-20 w-20">
+              <Image src={Logo} className="h-5"></Image>
             </div>
             <h2
               className={`text-lg  md:text-xl uppercase font-bold ${
@@ -38,23 +38,13 @@ function Header({ homePage }) {
           <div className="hidden lg:grid lg:grid-cols-5 lg:gap-4">
             {Pages.map((page) => (
               <Link key={page.label} href={page.url} className="">
-                <a className="text-sm lg:text-lg hover:text-amber-400 hover:font-bold hover:border-b-2 hover:border-b-amber-400">
+                <a className="text-sm lg:text-lg text-hover  hover:border-b-2">
                   {page.label}
                 </a>
               </Link>
             ))}
           </div>
-          {/* <div className="hidden lg:block">
-            <a
-              href="https://booking.salonready.io/48ff5710-76f0-4a93-8fc1-95974f395055"
-              target="_blank"
-            >
-              <button className="rounded-lg py-2 lg:py-2.5 px-4 lg:px-6 bg-gradient-to-tr from-amber-600 to-amber-400 text-lg text-white hover:bg-amber-600">
-                Book Appointment
-              </button>
-            </a>
-          </div> */}
-          {/* Hamburger Button */}
+          
           <button
             className={`z-50 lg:hidden focus:outline-none ${
               homePage ? 'color-primary' : 'color-primary'
@@ -84,7 +74,9 @@ function Header({ homePage }) {
           {Pages.map((page) => (
             <div className="w-full py-3 text-center">
               <Link key={page.label} href={page.url}>
-                <a className="block hover:text-lg hover:font-bold">{page.label}</a>
+                <a className="block text-hover">
+                  {page.label}
+                </a>
               </Link>
             </div>
           ))}

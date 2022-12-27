@@ -22,6 +22,7 @@ export default {
     bannerContent:
       'We offer you the ultimate in pampering and boosting your natural beauty with our whole-hearted, creative & professional staff',
   },
+  booking: "https://booking.salonready.io/a6ba97c0-74f4-4ebb-bd1a-2293830cd97a",
   values: [
     {
       title: 'We have the best therapies',
