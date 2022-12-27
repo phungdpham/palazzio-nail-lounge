@@ -12,7 +12,7 @@ function MobileButtons() {
         
           <a
             href={db.booking}
-            className="items-center mx-auto flex gap-2 text-center text-base"
+            className="items-center mx-auto flex gap-2 text-center text-lg"
             target="_blank"
           >
             <FaRegCalendarPlus />Book Online
@@ -21,7 +21,7 @@ function MobileButtons() {
         <button className="w-6/12 flex items-center  mx-2  ">
           <a
             href={`tel:${db.phone}`}
-            className="items-center  mx-auto flex gap-2 text-base"
+            className="items-center  mx-auto flex gap-2 text-lg"
           >
             <FiPhoneCall /> Call Us
           </a>
